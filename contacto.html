@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- Define el documento como HTML5 -->
+<html lang="es"> <!-- Indica que el contenido está en español -->
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 para compatibilidad con acentos y caracteres especiales -->
+  <title>Contacto - Catálogo Gourmet</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="css/estilos.css"> <!-- Enlace a la hoja de estilos principal -->
+</head>
+<body>
+
+  <!-- === Encabezado con título y navegación principal === -->
+  <header>
+    <h1>Contacto</h1> <!-- Título principal de la página -->
+    <nav>
+      <ul> <!-- Menú de navegación con enlaces a otras secciones del sitio -->
+        <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+        <li><a href="noticias.html">Noticias</a></li> <!-- Enlace a la sección de noticias -->
+        <li><a href="productos.html">Productos</a></li> <!-- Enlace a la vista general de productos -->
+        <li><a href="receta.html">Receta</a></li> <!-- Enlace a la sección de recetas -->
+        <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página actual -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- === Contenido principal === -->
+  <main>
+
+    <!-- Sección introductoria con mensaje institucional -->
+    <section>
+      <h2>¿Tienes alguna consulta o sugerencia?</h2>
+      <p>
+        En <strong>Catálogo Gourmet</strong> valoramos tu opinión. 
+        Si deseas hacernos llegar una consulta, sugerencia o comentario sobre nuestros productos, 
+        puedes utilizar el siguiente formulario. Nos comprometemos a responderte en el menor tiempo posible.
+      </p>
+    </section>
+
+    <!-- Sección con formulario de contacto -->
+    <section>
+      <h3>Formulario de contacto</h3>
+      <p>
+        Por favor, completa los campos con tus datos y tu mensaje. 
+        El envío se realiza mediante tu cliente de correo predeterminado.
+      </p>
+
+      <!-- Formulario que usa mailto para enviar datos por correo -->
+      <form action="mailto:ejemplo@correo.com" method="post" enctype="text/plain">
+        <!-- Campo para nombre -->
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <!-- Campo para correo electrónico -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Campo para asunto -->
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required>
+
+        <!-- Campo para mensaje -->
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar mensaje">
+      </form>
+    </section>
+
+    <!-- Sección con información alternativa de contacto -->
+    <section>
+      <h3>Información adicional</h3>
+      <p>
+        Si prefieres contactarnos directamente, puedes escribirnos a 
+        <a href="mailto:ejemplo@correo.com">ejemplo@correo.com</a> 
+        o seguirnos en nuestras redes sociales para estar al día con nuestras novedades y promociones.
+      </p>
+    </section>
+  </main>
+
+  <!-- === Pie de página con derechos de autor === -->
+  <footer>
+    <p>&copy; 2025 Catálogo Gourmet</p> <!-- Información de copyright -->
+  </footer>
+
+</body>
+</html>

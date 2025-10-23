@@ -1,0 +1,167 @@
+/* === Paleta gourmet moderna === */
+:root {
+  --color-fondo: #fdf8f2;           /* Marfil cálido */
+  --color-primario: #6b4226;        /* Marrón tostado */
+  --color-acento: #c19a6b;          /* Dorado suave */
+  --color-texto: #2c2c2c;           /* Gris oscuro legible */
+  --color-form-bg: #fffdf9;         /* Fondo claro formulario */
+  --color-form-input: #f7f3ee;      /* Campos suaves */
+  --color-form-text: #222;          /* Texto en campos */
+  --fuente-base: 'Segoe UI', sans-serif;
+}
+
+/* === Reset básico === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-base);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  padding: 1em;
+}
+
+/* === Encabezado y navegación === */
+header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-primario);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-acento);
+}
+
+/* === Tipografía y estructura === */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+h1, h2, h3 {
+  color: var(--color-primario);
+  margin-bottom: 0.5em;
+}
+
+/* === Bloques con imagen y texto (Flexbox) === */
+.fila {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
+
+.fila-inversa {
+  flex-direction: row-reverse;
+}
+
+/* === Imágenes generales === */
+img {
+  display: block;
+  margin: 1em auto;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-lateral,
+.imagen-producto,
+.imagen-receta,
+.imagen-ajustada {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* === Formulario de contacto === */
+form {
+  background-color: var(--color-form-bg);
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+label {
+  font-weight: bold;
+  color: var(--color-primario);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: var(--color-form-input);
+  color: var(--color-form-text);
+}
+
+input[type="submit"] {
+  background-color: var(--color-acento);
+  color: #fff;
+  border: none;
+  padding: 0.75em;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #a67c52;
+}
+
+/* === Pie de página === */
+footer {
+  text-align: center;
+  margin-top: 4em;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* === Enlace de retorno === */
+.enlace-volver {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.enlace-volver a,
+a[href^="mailto:"] {
+  color: var(--color-primario);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.enlace-volver a:hover,
+a[href^="mailto:"]:hover {
+  color: var(--color-acento);
+}

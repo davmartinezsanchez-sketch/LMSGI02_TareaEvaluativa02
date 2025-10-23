@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- Define el documento como HTML5 -->
+<html lang="es"> <!-- Indica que el contenido está en español -->
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 para compatibilidad con acentos y caracteres especiales -->
+  <title>Productos - Catálogo Gourmet</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="css/estilos.css"> <!-- Enlace a la hoja de estilos principal ubicada en la carpeta css -->
+</head>
+<body>
+
+  <!-- === Encabezado con título y navegación principal === -->
+  <header>
+    <h1>Productos destacados</h1> <!-- Título principal de la página -->
+    <nav>
+      <ul> <!-- Menú de navegación con enlaces a otras secciones del sitio -->
+        <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+        <li><a href="noticias.html">Noticias</a></li> <!-- Enlace a la sección de noticias -->
+        <li><a href="productos.html">Productos</a></li> <!-- Enlace a la sección actual -->
+        <li><a href="receta.html">Receta</a></li> <!-- Enlace a la sección de recetas -->
+        <li><a href="contacto.html">Contacto</a></li> <!-- Enlace al formulario de contacto -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- === Contenido principal con productos destacados === -->
+  <main>
+
+    <!-- Primer producto: Queso Manchego Curado -->
+    <section class="bloque"> <!-- Sección con clase para aplicar estilos específicos -->
+      <div class="fila"> <!-- Contenedor flexible con imagen a la izquierda y texto a la derecha -->
+        <img src="img/queso.jpg" alt="Queso Manchego Curado" class="imagen-ajustada"> <!-- Imagen del producto -->
+        <div>
+          <h2>Queso Manchego Curado</h2> <!-- Título del producto -->
+          <p>
+            Elaborado con leche de oveja y madurado durante más de seis meses, este queso ofrece una textura firme 
+            y un sabor intenso con notas de frutos secos. Ideal para maridar con vinos tintos y acompañar con membrillo o pan rústico.
+          </p> <!-- Descripción del producto -->
+          <a href="productos/queso.html">Ver detalles</a> <!-- Enlace a la ficha individual del producto -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Segundo producto: Vino Tinto Reserva -->
+    <section class="bloque">
+      <div class="fila fila-inversa"> <!-- Contenedor flexible con imagen a la derecha -->
+        <img src="img/vino.jpg" alt="Botella de vino tinto reserva" class="imagen-ajustada"> <!-- Imagen del producto -->
+        <div>
+          <h2>Vino Tinto Reserva</h2> <!-- Título del producto -->
+          <p>
+            Procedente de viñedos seleccionados, este vino ha sido envejecido en barrica durante 18 meses. 
+            Presenta aromas de frutos negros, vainilla y especias, con un cuerpo equilibrado y persistente. 
+            Perfecto para carnes rojas y quesos curados.
+          </p> <!-- Descripción del producto -->
+          <a href="productos/vino.html">Ver detalles</a> <!-- Enlace a la ficha individual del producto -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tercer producto: Jamón Ibérico de Bellota -->
+    <section class="bloque">
+      <div class="fila"> <!-- Contenedor flexible con imagen a la izquierda -->
+        <img src="img/jamon.jpg" alt="Jamón ibérico de bellota" class="imagen-ajustada"> <!-- Imagen del producto -->
+        <div>
+          <h2>Jamón Ibérico de Bellota</h2> <!-- Título del producto -->
+          <p>
+            Curado de forma tradicional durante más de 36 meses, este jamón ibérico destaca por su infiltración de grasa, 
+            sabor profundo y textura sedosa. Se recomienda servir en finas lonchas a temperatura ambiente para apreciar su aroma y sabor.
+          </p> <!-- Descripción del producto -->
+          <a href="productos/jamon.html">Ver detalles</a> <!-- Enlace a la ficha individual del producto -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- === Pie de página con derechos de autor === -->
+  <footer>
+    <p>&copy; 2025 Catálogo Gourmet</p> <!-- Información de copyright -->
+  </footer>
+
+</body>
+</html>
